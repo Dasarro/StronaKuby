@@ -90,7 +90,14 @@ main {
     height: 300vh;
 }
 
-#prices {
+#about {
     background-color: var(--main-color);
-    height: 70vh;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+#about img {
+    height: 100%;
+    width: auto;
 }
