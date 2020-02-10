@@ -6,6 +6,7 @@
 
 :root {
     --main-color: #bada55;
+    /* #e2622e */
     --secondary-color: #fff;
 }
 
@@ -28,6 +29,7 @@ nav {
     color: var(--secondary-color);
     height: 70px;
     width: 100%;
+    font-size: 25px;
 }
 
 nav .logo {
@@ -38,16 +40,15 @@ nav .logo {
 
 nav ul {
     height: 100%;
-    width: calc(100% - 70px);
+    /* width: calc(100% - 70px); */
     display: flex;
+    /* flex: 5; */
     flex-direction: row;
     list-style-type: none;
 }
 
 nav li {
     display: flex;
-    font-size: 25px;
-    width: 20%;
     height: 100%;
 }
 
@@ -59,11 +60,23 @@ nav a {
     justify-content: center;
     align-items: center;
     text-decoration: none;
+    padding: 0 20px;
+    transition: background-color 0.5s, font-size 0.5s;
 }
 
 nav a:hover {
     background-color: rgba(55, 55, 55, 0.4);
+    font-size: 30px;
+}
 
+nav .social {
+    display: flex;
+    margin-left: auto;
+}
+
+nav .social i {
+    padding: 0 10px;
+    /* font-family: 'FontAwesome'; */
 }
 
 header {
