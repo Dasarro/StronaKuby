@@ -25,16 +25,18 @@ nav {
     position: fixed;
     display: flex;
     flex-direction: row;
-    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0);
     color: var(--secondary-color);
-    height: 70px;
+    height: 50px;
     width: 100%;
     font-size: 25px;
+    transition: background-color .5s;
 }
 
 nav .logo {
     height: 100%;
-    width: 70px;
+    width: 50px;
     background-color: var(--main-color);
 }
 
@@ -104,7 +106,7 @@ main {
 }
 
 #about {
-    background-color: var(--main-color);
+    background-color: #fff;
     height: 100vh;
     display: flex;
     flex-direction: row;
@@ -113,4 +115,17 @@ main {
 #about img {
     height: 100%;
     width: auto;
+}
+
+#about .bio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    height: auto;
+    margin: 5% 0;
+    padding: 5%;
+    background-color: #fff;
+    color: #000;
+    font-size: 20px;
 }
