@@ -5,9 +5,11 @@
 }
 
 :root {
-    --main-color: #bada55;
+    --main-color: #c60000;
     /* #e2622e */
     --secondary-color: #fff;
+    --background-color: #eee;
+    --font-color: #000;
 }
 
 .main-color {
@@ -19,6 +21,7 @@ body {
     flex-direction: column;
     box-sizing: border-box;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: var(--background-color);
 }
 
 nav {
@@ -106,7 +109,6 @@ main {
 }
 
 #about {
-    background-color: #fff;
     height: 100vh;
     display: flex;
     flex-direction: row;
@@ -119,13 +121,23 @@ main {
 
 #about .bio {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: justify;
     height: auto;
-    margin: 5% 0;
-    padding: 5%;
-    background-color: #fff;
-    color: #000;
+    margin: 3% 0;
+    padding: 2%;
+    color: var(--font-color);
     font-size: 20px;
+}
+
+#about .bio h2 {
+    font-size: 40px;
+    margin-bottom: 5%;
+    color: var(--main-color);
+}
+
+#about .bio p {
+    margin-bottom: 1rem;
 }
