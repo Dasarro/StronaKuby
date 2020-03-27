@@ -5,6 +5,7 @@
 }
 
 :root {
+    font-size: 16px;
     --main-color: #c60000;
     /* #e2622e */
     --secondary-color: #fff;
@@ -117,6 +118,10 @@ nav .social i {
 }
 
 header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
     background-image: url("./images/header.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -129,9 +134,9 @@ header {
 
 header h1 {
     position: relative;
+    text-align: left;
     top: 15%;
     left: 10%;
-    width: 90%;
     color: var(--secondary-color);
 }
 
@@ -323,4 +328,59 @@ footer {
 
 footer p {
     margin: 0;
+}
+
+
+
+
+
+
+@media (max-width: 1200px) {
+    #contact {
+        height: auto;
+        text-align: center;
+    }
+
+    #contact .contact-container {
+        flex-direction: column;
+    }
+
+    #contact form::after {
+        content: "";
+        height: 0;
+        border-bottom: dotted 5px black;
+        margin-bottom: 5%;
+    }
+}
+
+@media (max-width: 855px) {
+
+    header {
+        align-items: flex-end;
+        justify-content: flex-end;
+    }
+
+    header h1 {
+        top: unset;
+        left: unset;
+        bottom: 10%;
+        right: 10%;
+        text-align: right;
+        /* background-color: rgba(0, 0, 0, 0.6);
+        box-shadow: 0px 0px 10px 10px rgba(0,0,0,0.6); */
+    }
+
+    #about {
+        height: auto;
+    }
+
+    #about img {
+        display: none;
+    }
+
+    #about .bio{
+        height: auto;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
 }
